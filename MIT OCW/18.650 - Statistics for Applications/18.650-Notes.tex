@@ -1,0 +1,40 @@
+\documentclass{article}
+
+\usepackage{amssymb,amsmath}
+
+
+\begin{document}
+	\abstract
+	This document contains the typed notes for the course ``Statistics For Applications'' offerred by MIT. These notes are meant to be a condensation of the video lectures posted on MIT OCW YouTube channel and is used strictly as a reference only. One section will be dedicated for each video lecture for ease of referencing. The official pre-requisites of the course are as follows:
+	\begin{itemize}
+		\item Probability (18.600 or 6.041)
+		\item Calculus 2
+		\item Basic Linear Algebra
+	\end{itemize}
+
+	\newpage
+	\tableofcontents
+
+	\newpage
+	\section{Lecture 1: Introduction}
+	This first lecture is largely about the logistics of the course and thus the majority of this section is empty.	
+	
+	\subsection{Near End-of-Lecture Exercise: Exam Scores}
+	Consider the test scores of 15 students represented by $X_i$, assuming that $X_i \sim \mathcal{N}(\mu, \sigma^2)$. Suppose the list of scores are given by
+	\begin{equation}
+		L = \{ 65, 41, 70, 40, 58, 82, 76, 78, 59, 59, 84, 89, 134, 51, 72\}.
+	\end{equation}
+	We want to find an estimator for $\mu$. An estimator for $\mu$ is the average
+	\begin{equation}
+		\hat{\mu} = \frac{1}{n} \sum_{i=1}^{15} X_i = 67.5.
+	\end{equation}
+	An estimate for $\sigma$ is calculated by the variance defined by
+	\begin{equation}
+		\sigma^2 = \mathbb{E} \left[ (X - \mathbb{E}[X])^2 \right].
+	\end{equation}
+	And thus
+	\begin{equation}
+		\hat{\sigma^2} = \frac{1}{n} \sum_{i=1}^n \left( X_i - \hat{\mu} \right)^2 = 18.
+	\end{equation}
+	The primary takeaway here is that \emph{estimators are obtained by replacing expectation values with averages}.
+\end{document}
